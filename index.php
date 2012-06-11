@@ -6,10 +6,10 @@
     <meta content="" name="author">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="/css/docs.css">
-    <link rel="stylesheet" href="/js/google-code-prettify/prettify.css">
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="public/css/docs.css">
+    <link rel="stylesheet" href="public/js/google-code-prettify/prettify.css">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -22,8 +22,8 @@
     <link href="/ico/apple-touch-icon-114-precomposed.png" sizes="114x114" rel="apple-touch-icon-precomposed">
     <link href="/ico/apple-touch-icon-72-precomposed.png" sizes="72x72" rel="apple-touch-icon-precomposed">
     <link href="/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
-     <script src="/js/jquery.js"></script>
-    <script src="/js/jquery.validate.js"></script>
+     <script src="public/js/jquery.js"></script>
+    <script src="public/js/jquery.validate.js"></script>
   </head>
 
   <body >
@@ -31,7 +31,48 @@
 
   <!-- Navbar
     ================================================== -->
-    <%- partial('topbar') %>      
+     <div class="navbar navbar-fixed-top" style="height:10px;">
+      <div class="navbar-inner">
+        <div class="container">
+         
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="/">Home</a>
+              </li>
+            
+              <li class="">
+                <a href="/about/">About</a>
+              </li>
+              <li class="">
+                <a href="/user/register/">Register</a>
+              </li>
+              <li class="">
+              </li>
+            </ul>
+          </div>
+
+     <form class="navbar-search pull-right" action="/user/login" method="post">
+	    <input type="text" class="search-query" placeholder="Username/Email" name="username">
+	    <input type="password" class="search-query" placeholder="Password" name="userpass">
+			<button type="submit" class="btn">Login</button>    
+		</form>
+
+		<div class="btn-group pull-right">
+            <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
+              <i class="icon-user"></i> 
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/user/myaccount/">My Account</a></li>
+              <li class="divider"></li>
+              <li><a href="/user/logout/">Sign Out</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <div class="container ">
       <!-- Masthead
       ================================================== -->
@@ -42,21 +83,21 @@
 				    <!-- Carousel items -->
 				
               <div class="item">
-                <img src="/img/bootstrap-mdo-sfmoma-01.jpg" alt="">
+                <img src="public/img/bootstrap-mdo-sfmoma-01.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>First Thumbnail label</h4>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
               </div>
               <div class="item active">
-                <img src="/img/bootstrap-mdo-sfmoma-02.jpg" alt="">
+                <img src="public/img/bootstrap-mdo-sfmoma-02.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>Second Thumbnail label</h4>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
               </div>
               <div class="item">
-                <img src="/img/bootstrap-mdo-sfmoma-03.jpg" alt="">
+                <img src="public/img/bootstrap-mdo-sfmoma-03.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>Third Thumbnail label</h4>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -72,10 +113,10 @@
       </header>
       <div class="row">
     <div class="span7">
-  		<%- body %>
+
   	</div>
     <div class="span230">
-      <%- partial('sidebar') %>     
+
     </div>
   </div>
 
@@ -125,19 +166,19 @@ Copyright &copy; 2012 . All Rights Reserved.
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
    
-    <script src="/js/google-code-prettify/prettify.js"></script>
-    <script src="/js/bootstrap-transition.js"></script>
-    <script src="/js/bootstrap-alert.js"></script>
-    <script src="/js/bootstrap-modal.js"></script>
-    <script src="/js/bootstrap-dropdown.js"></script>
-    <script src="/js/bootstrap-scrollspy.js"></script>
-    <script src="/js/bootstrap-tab.js"></script>
-    <script src="/js/bootstrap-tooltip.js"></script>
-    <script src="/js/bootstrap-popover.js"></script>
-    <script src="/js/bootstrap-button.js"></script>
-    <script src="/js/bootstrap-collapse.js"></script>
-    <script src="/js/bootstrap-carousel.js"></script>
-    <script src="/js/bootstrap-typeahead.js"></script>
-    <script src="/js/application.js"></script>
+    <script src="public/js/google-code-prettify/prettify.js"></script>
+    <script src="public/js/bootstrap-transition.js"></script>
+    <script src="public/js/bootstrap-alert.js"></script>
+    <script src="public/js/bootstrap-modal.js"></script>
+    <script src="public/js/bootstrap-dropdown.js"></script>
+    <script src="public/js/bootstrap-scrollspy.js"></script>
+    <script src="public/js/bootstrap-tab.js"></script>
+    <script src="public/js/bootstrap-tooltip.js"></script>
+    <script src="public/js/bootstrap-popover.js"></script>
+    <script src="public/js/bootstrap-button.js"></script>
+    <script src="public/js/bootstrap-collapse.js"></script>
+    <script src="public/js/bootstrap-carousel.js"></script>
+    <script src="public/js/bootstrap-typeahead.js"></script>
+    <script src="public/js/application.js"></script>
    
 </body></html>
