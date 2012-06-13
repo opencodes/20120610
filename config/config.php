@@ -1,17 +1,26 @@
 <?php 
 $config = array('development'=> array(
-  port => 1984,
-  cdn=> 'http://localhost/20120610/',
+  'root_dir'=>'../20120610/',
   db_options=> array(
     host=> 'localhost',
     port=> 3306,
     user=> 'root',
     password=> 'root',
     database=> 'ec_ecibil'
+  ),
+  tpl_options=>array(
+  'site'=>array(
+  'template_dir'=>'views',
+  'templlate_compile_dir'=>'template_c',
+  'cache_dir'=>'cache'
+  ),
+  'admin'=>array(
+  'template_dir'=>'views/admin',
+  'templlate_compile_dir'=>'template_c/admin',
+  'cache_dir'=>'cache/admin'
+  )
   )
 ),'production'=> array(
-  port => 1984,
-  cdn=> 'http://rkjha.com/test/ecibil/',
   db_options=> array(
     host=> 'localhost',
     port=> 3306,

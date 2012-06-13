@@ -1,16 +1,19 @@
 <?php
+include_once './config/config.php';
 /*
  * Include smarty library
  * configure smarty for project
  */
-require('../smarty/Smarty.class.php');
-$smarty = new Smarty;
-//$smarty->force_compile = true;
-$smarty->debugging = true;
-$smarty->caching = true;
-$smarty->cache_lifetime = 120;
-$smarty->setTemplateDir('../20120610/views/');
-$smarty->setCompileDir('../20120610/templates_c');
-$smarty->setCacheDir('../20120610/cache');
-$smarty->setConfigDir('../20120610/config/');
+require('smarty/Smarty.class.php');
+$html = new Smarty;
+
+$config = $config['development'];
+//$html->force_compile = true;
+$html->debugging = false;
+$html->caching = true;
+$html->cache_lifetime = 120;
+$html->setTemplateDir($config['root_dir'].$config['tpl_options']['site']['template_dir']);
+$html->setCompileDir($config['root_dir'].$config['tpl_options']['site']['templlate_compile_dir']);
+$html->setCacheDir($config['root_dir'].$config['tpl_options']['site']['cache_dir']);
+$html->setConfigDir('../20120610/config/');
 /*--------------- Smarty Config End -------------*/

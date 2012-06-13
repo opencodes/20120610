@@ -1,8 +1,7 @@
 <?php 
-ini_set('error_reporting', E_ALL);
-require_once 'config/config.php';
+// Report all errors except E_NOTICE
+error_reporting(E_ALL ^ E_NOTICE);
 require_once 'lib/utill.php';
 
-$smarty->display('index.tpl');
-echo "Ecibil";
+$html->display('index.tpl');
 ?>
