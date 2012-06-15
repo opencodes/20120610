@@ -1,5 +1,5 @@
 <footer>
-        <p>&copy; CIBIL</p>
+        <p>&copy; EMP-CIBIL</p>
       </footer>
     </div><!--/.fluid-container-->
 

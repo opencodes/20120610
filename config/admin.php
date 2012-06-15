@@ -9,12 +9,12 @@ $config = array('development'=> array(
     database=> 'ec_ecibil'
   ),
   tpl_options=>array(
-	'site'=>array(
-	  'template_dir'=>'views',
-	  'templlate_compile_dir'=>'templates_c',
-	  'cache_dir'=>'cache'
+  	'site'=>array(
+	  'template_dir'=>'views/admin/',
+	  'templlate_compile_dir'=>'template_c/admin/',
+	  'cache_dir'=>'cache/admin/'
 	  ),
-	 'admin'=>array(
+  	'admin'=>array(
 	  'template_dir'=>'views/admin',
 	  'templlate_compile_dir'=>'template_c/admin',
 	  'cache_dir'=>'cache/admin'
@@ -32,9 +32,9 @@ $config = array('development'=> array(
   ),
   tpl_options=>array(
   	'site'=>array(
-	  'template_dir'=>'views',
-	  'templlate_compile_dir'=>'template_c',
-	  'cache_dir'=>'cache'
+	  'template_dir'=>'views/admin/',
+	  'templlate_compile_dir'=>'template_c/admin/',
+	  'cache_dir'=>'cache/admin/'
 	  ),
   	'admin'=>array(
 	  'template_dir'=>'views/admin',
