@@ -1,6 +1,6 @@
 {include file="header.tpl" title="Info"}
 <div  style="min-height: 40px;" id="response"></div>
-<form action="/login/" id="login-form" method="post">
+<form action="admin/login.php" id="login-form" method="post">
 <h2> Admin Login</h2>
 <div id="inputs">
 	<div id="masterinput" class="clearfix">

@@ -19,10 +19,14 @@ class Auth {
       $chars = "0123456789abcdefghiklmnopqrstuvwxyz";
       $string_length = 4;
       $randomstring = '';
-      for ($i=0; $i<  $string_length; $i++) {
+      for ($i=0; $i<=  $string_length; $i++) {
         $rnum = rand(1, 36);
         $randomstring .= $chars[$rnum];
       }
-      return randomstring;
+      return $randomstring;
     }
 }
+/*** Test ****/
+$auth = new Auth();
+//echo $auth->salt();
+echo $auth->createpassword('admin123');
