@@ -1,13 +1,12 @@
+</div>
 <footer class="footer">
 <div class="container" style="min-height: 150px;">
    <div class="row">
     <div class="span4">
       <h3><small><a href="/about/">About</a></small></h3>
-      <p>Aliquam laoreet posuere velit vitae semper. Pellentesque sit amet lorem tortor. Donec pretium venenatis varius. Nulla condimentum hendrerit erat non commodo. Vestibulum sit amet risus neque, non tempus felis. Nulla tincidunt est nec urna tempor a mollis eros fermentum. Nam convallis, risus eu tempus commodo, justo augue imperdiet turpis, sed pulvinar mauris tellus nec lectus. Pellentesque non fringilla eros. </p>
     </div><!-- /.span -->
     <div class="span3">
       <h3><small><a href="/contact/">Contact</a></small></h3>
-      <p>Aliquam laoreet posuere velit vitae semper. Pellentesque sit amet lorem tortor. Donec pretium venenatis varius. Nulla condimentum hendrerit erat non commodo. Vestibulum sit amet risus neque, non tempus felis. Nulla tincidunt est nec urna tempor a mollis eros fermentum. Nam convallis, risus eu tempus commodo, justo augue imperdiet turpis, sed pulvinar mauris tellus nec lectus. Pellentesque non fringilla eros.</p>
       
     </div><!-- /.span -->
     <div class="span230">

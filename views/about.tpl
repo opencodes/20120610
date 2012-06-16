@@ -1,7 +1,7 @@
 {include file="header.tpl" title="Header"}
 <div class="row" >
 <div class="page-header">
-    <h1>Home <small></small></h1>
+    <h1>About Us <small></small></h1>
 </div>
 <div id="lipsum">
 <p>

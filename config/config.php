@@ -1,4 +1,7 @@
 <?php 
+// Report all errors except E_NOTICE
+error_reporting(E_ALL ^ E_NOTICE);
+
 $config = array('development'=> array(
   'root_dir'=>'../20120610/',
   db_options=> array(

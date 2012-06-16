@@ -6,10 +6,11 @@
     <meta content="" name="author">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/public/css/bootstrap.css">
-    <link rel="stylesheet" href="/public/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="/public/css/docs.css">
-    <link rel="stylesheet" href="/public/js/google-code-prettify/prettify.css">
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="public/css/docs.css">
+    <link rel="stylesheet" href="public/css/common.css">    
+    <link rel="stylesheet" href="public/js/google-code-prettify/prettify.css">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -34,31 +35,23 @@
      <div class="navbar navbar-fixed-top" style="height:10px;">
       <div class="navbar-inner">
         <div class="container">
-         
+          <div class='logo pull-left'>
+          	<a href="index">Employee CIBIL</a>		
+          </div>        
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="/">Home</a>
-              </li>
-            
-              <li class="">
-                <a href="/about/">About</a>
+                <a href="about">About</a>
               </li>
               <li class="">
-                <a href="/user/register/">Register</a>
+                <a href="register">Register</a>
               </li>
               <li class="">
               </li>
             </ul>
-          </div>
-
-     <form class="navbar-search pull-right" action="/user/login" method="post">
-	    <input type="text" class="search-query" placeholder="Username/Email" name="username">
-	    <input type="password" class="search-query" placeholder="Password" name="userpass">
-			<button type="submit" class="btn">Login</button>    
-		</form>
-
-		<div class="btn-group pull-right">
+          </div>          
+		{if $smarty.session.user}
+     	   <div class="btn-group pull-right">
             <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
               <i class="icon-user"></i> 
               <span class="caret"></span>
@@ -69,7 +62,15 @@
               <li><a href="/user/logout/">Sign Out</a></li>
             </ul>
           </div>
-
+		{else }
+		<form class="navbar-search pull-right" action="/user/login" method="post">
+	    <input type="text" class="search-query" placeholder="Username/Email" name="username">
+	    <input type="password" class="search-query" placeholder="Password" name="userpass">
+			<button type="submit" class="btn">Login</button>    
+		</form>		
+		{/if}
         </div>
       </div>
     </div>
+<div class="container" >
+    
