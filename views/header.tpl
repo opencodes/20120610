@@ -6,10 +6,10 @@
     <meta content="" name="author">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="public/css/bootstrap.css">
-    <link rel="stylesheet" href="public/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="public/css/docs.css">
-    <link rel="stylesheet" href="public/js/google-code-prettify/prettify.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/public/css/docs.css">
+    <link rel="stylesheet" href="/public/js/google-code-prettify/prettify.css">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
