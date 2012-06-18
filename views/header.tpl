@@ -47,6 +47,9 @@
                 <a href="register">Register</a>
               </li>
               <li class="">
+                <a href="employee">Employee</a>
+              </li>
+              <li class="">
               </li>
             </ul>
           </div>          
